@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         dwnldbtn.setOnClickListener{
             var request = DownloadManager.Request(Uri.parse("https://kotlinlang.org/docs/kotlin-docs.pdf"))
-                .setTitle("My Resume")
-                .setDescription("Resume Downloding")
+                .setTitle("Kotlin PDF")
+                .setDescription("Kotlin PDF Downloding")
                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE)
                 .setAllowedOverMetered(true)
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                var id: Long? = intent?.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID,-1)
                 if(id==myDownloadID)
                 {
-                    Toast.makeText(applicationContext,"Resume Download Completed",Toast.LENGTH_LONG).show()
+                    Toast.makeText(applicationContext,"Kotlin PDF Download Completed",Toast.LENGTH_LONG).show()
                 }
             }
 
