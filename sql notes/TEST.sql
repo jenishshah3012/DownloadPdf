@@ -1,0 +1,23 @@
+
+use jenish
+--#1
+--create table emp_details(emp_id int primary key,emp_name varchar(30),gender varchar(6),location varchar(20),age  int)
+--#2
+--create table emp_salary(emp_id int foreign key references emp_details(emp_id),emp_name varchar(30),department varchar(25),salary int)
+--#3
+--SELECT * FROM emp_details
+--SELECT * FROM emp_salary
+--#4
+--SELECT * FROM emp_details where age >24
+--#5
+--UPDATE EMP_DEATAILS SET AGE=24 WHERE emp_name='jenish'
+--#6
+--alter table emp_salary add experience int default 2
+--ALTER TABLE EMP_DETAILS ADD CONSTRAINT CHK_AGE CHECK (AGE>22)
+--SELECT * FROM EMP_SALARY WHERE DEPARTMENT='ACCOUNT' AND SALARY >25000
+--SELECT EMP_ID,EMP_NAME FROM EMP_DETAILS WHERE GENDER='FEMALE' OR LOCATION='CHENNAI'
+--SELECT TOP 1 * FROM EMP_SALARY ORDER BY salary DESC
+--SELECT MIN(SALARY) AS MINSALARY FROM  EMP_SALARY
+--SELECT COUNT(EMP_ID) FROM EMP_DETAILS
+--SELECT AVG(SALARY) FROM EMP_SALARY
+--SELECT * FROM EMP_DETAILS WHERE GENDER ='MALE' OR NOT  LOCATION='MUMBAI' OR AGE>25
